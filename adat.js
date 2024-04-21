@@ -1,22 +1,26 @@
 export const termekLISTA=[
     {
         marka: "Nike",
-        nem: "férfi",
-        ar: 15000
+        nem: "Férfi",
+        ar: 15000,
+        kep: "kepek/nike.jpg"
     },
     {
         marka: "Adidas",
-        nem: "női",
-        ar: 10000
+        nem: "Női",
+        ar: 10000,
+        kep: "kepek/adidas.jpg"
     },
     {
         marka: "Ralph Lauren",
-        nem: "férfi",
-        ar: 25000
+        nem: "Férfi",
+        ar: 25000,
+        kep: "kepek/ralph.jpg"
     },
     {
-        marka: "Shein",
-        nem: "női",
-        ar: 1500
+        marka: "GAP",
+        nem: "Női",
+        ar: 15000,
+        kep: "kepek/gap.jpg"
     }
 ]

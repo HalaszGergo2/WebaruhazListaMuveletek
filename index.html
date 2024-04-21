@@ -6,8 +6,10 @@
     <meta name="description" content="Webaruhaz">
     <meta name="keywords" content="Webaruhaz">
     <meta name="author" content="Halász Gergő">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script type="module" src="main.js"></script>
     <title>Webáruház</title>
 </head>
 <body>
@@ -21,31 +23,42 @@
                 <div class="container-fluid">
                     <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Főoldal</a>
+                        <a class="nav-link active" href="index.html">Főoldal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Személyes adatok</a>
+                        <a class="nav-link" href="szemelyes.html">Személyes adatok</a>
                     </li>
                     </ul>
                 </div>
             </nav>
             <div class="row">
-                <div class="be">
-                    <label for="szuro">Szűrési feltétel:</label>
-                    <input type="text" name="szuro" id="szuro">
-                    <label for="rendez">Rendez</label>
-                    <select class="form-control" id="rendez">
-                        <option>Alap</option>
-                        <option>Növekvő sorrend</option>
-                        <option>Csökkenő sorrend</option>
-                    </select>
-                </div>
-                <div class="kartyak">
+                    <div class="be">
+                        <label for="szuro">Szűrési feltétel:</label>
+                        <input type="text" name="szuro" id="szuro">
+                        <label for="rendez">Rendez</label>
+                        <select class="form-control col-md-5 " id="rendez">
+                            <option>Alap</option>
+                            <option>Növekvő sorrend</option>
+                            <option>Csökkenő sorrend</option>
+                        </select>
+                    </div>
+                    <article class="col-md-9">
+                        
+                            <div class="kartyak">
+                                <div class="row">
 
-                </div>
-                <div class="kosar">
+                                </div>
+                            </div>
+                        
+                </article>
+                <aside class="col-md-3">
+                    <div class="kosar">
 
-                </div>
+                    </div>
+                </aside>
             </div>
+            <footer class="col-md-12">
+                <p>Halász Gergő©</p>
+            </footer>
 </body>
 </html>
