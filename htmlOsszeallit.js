@@ -2,8 +2,8 @@ export function htmlCardOsszeallit(lista){
     let txt= ""
     for(let i = 0; i < lista.length; i++){
         txt +=`
-        <div class="col-sm-6">
-        <div class="card">
+        <div class="col-lg-3 mb-3 card">
+        <div class="">
                         
             <div class="card-header">
                 <h4 class="card-title">${lista[i].marka}</h4>
