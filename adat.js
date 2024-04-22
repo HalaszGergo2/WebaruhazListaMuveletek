@@ -34,6 +34,18 @@ export const termekLISTA=[
         nem: "Unisex",
         ar: 25000,
         kep: "kepek/lacoste.jpg"
+    },
+    {
+        marka: "Tommy Jeans",
+        nem: "Unisex",
+        ar: 13400,
+        kep: "kepek/tommy.jpg"
+    },
+    {
+        marka: "Boss",
+        nem: "Férfi",
+        ar: 18190,
+        kep: "kepek/boss.jpg"
     }
 
 ]
