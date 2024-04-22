@@ -14,7 +14,7 @@ export const termekLISTA=[
     {
         marka: "Ralph Lauren",
         nem: "Férfi",
-        ar: 25000,
+        ar: 28000,
         kep: "kepek/ralph.jpg"
     },
     {
@@ -22,5 +22,18 @@ export const termekLISTA=[
         nem: "Női",
         ar: 15000,
         kep: "kepek/gap.jpg"
+    },
+    {
+        marka: "LEVI'S",
+        nem: "Női",
+        ar: 12000,
+        kep: "kepek/levis.jpg"
+    },
+    {
+        marka: "Lacoste",
+        nem: "Unisex",
+        ar: 25000,
+        kep: "kepek/lacoste.jpg"
     }
+
 ]
