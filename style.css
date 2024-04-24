@@ -13,7 +13,7 @@
 .navbar{
     background-color: #e7d8c2;
     border-radius: 25px;
-    margin: 10px;
+    margin-top: 10px;
 }
 h1{
     margin: auto;
@@ -32,6 +32,7 @@ header{
 footer{
     background-color: #BFAA8C;
     padding-bottom: 25px;
+    border-radius: 25px;
 }
 .nagyit{
     transition: 0.3s ease;
