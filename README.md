@@ -2,7 +2,7 @@
 # TeeTopia Webáruház
 ## Halász Gergő
 
-### Specifikáció: 
+## Specifikáció: 
 Készíts "webáruházat" tetszőleges témában. 
 
 Egy listában tároljuk az objektumokat, minden objektumnak legalább 3 adata legyen!
@@ -22,7 +22,7 @@ Kosár funkció:  A publikus felületen a terméket helyezheted a kosárba. A ko
 ++ Minden termékhez (divhez) tartozik egy gomb, amivel meg tudjuk nézni azt az egyetlen terméket.
 A kiemelt termék mellett megjelenik egy bal és egy jobb léptető gomb, amivel léptetni tudjuk a terméket.
 
-### Függvények: 
+## Függvények: 
 
 htmlCardOsszeallit(lista)
 visszatérési értéke egy txt lesz.
