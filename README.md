@@ -1,6 +1,6 @@
 
 # TeeTopia Webáruház
-## Halász Gergő
+### Halász Gergő
 
 ## Specifikáció: 
 Készíts "webáruházat" tetszőleges témában. 
