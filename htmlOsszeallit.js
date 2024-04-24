@@ -45,3 +45,5 @@ export function htmlKosarOsszeallit(lista) {
 export function megjelenit(txt, divELEM) {
   divELEM.html(txt);
 }
+
+
