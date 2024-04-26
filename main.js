@@ -16,7 +16,6 @@ export function init(termekLISTA, kosarLISTA) {
   megjelenit(htmlCardOsszeallit(termekLISTA), kartyaELEM);
   megjelenit(htmlKosarOsszeallit(kosarLISTA), kosarELEM);
   kosarbaRakEsemeny();
-  rendezEsemeny();
   torolEsemeny();
 }
 function kosarbaRakEsemeny() {
@@ -49,10 +48,8 @@ function rendezEsemeny() {
       rLISTA = rendez(termekLISTA, 1);
     }
     console.log(rLISTA)
-    init(rLISTA)
-    
+    init(rLISTA)  
   });
-  
 }
 
 function szuresEsemeny() {
@@ -67,4 +64,4 @@ function szuresEsemeny() {
   });
 }
 
-init(termekLISTA, kosarLISTA);
+
