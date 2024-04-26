@@ -4,20 +4,18 @@ import {
   htmlKosarOsszeallit,
   megjelenit,
 } from "./htmlOsszeallit.js";
-import { kosarbaRak, torol, szures } from "./fuggvenyek.js";
+import { kosarbaRak, torol, szures, rendez } from "./fuggvenyek.js";
 
 const kartyaELEM = $(".kartyak");
 const kosarELEM = $(".kosar");
 const kosarLISTA = [];
-let irany = 1;
-init(termekLISTA);
-init(kosarLISTA);
+init(termekLISTA, kosarLISTA);
 szuresEsemeny();
-export function init(lista) {
+rendezEsemeny();
+export function init(termekLISTA, kosarLISTA) {
   megjelenit(htmlCardOsszeallit(termekLISTA), kartyaELEM);
   megjelenit(htmlKosarOsszeallit(kosarLISTA), kosarELEM);
   kosarbaRakEsemeny();
-  rendezEsemeny();
   torolEsemeny();
 }
 function kosarbaRakEsemeny() {
@@ -26,7 +24,7 @@ function kosarbaRakEsemeny() {
     let id = event.target.id;
     kosarbaRak(termekLISTA, kosarLISTA, id);
     console.log(kosarLISTA);
-    init();
+    init(termekLISTA, kosarLISTA);
   });
 }
 
@@ -35,27 +33,35 @@ function torolEsemeny() {
   torolGOMB.on("click", function (event) {
     let id = event.target.id;
     torol(kosarLISTA, id);
-    init();
+    init(termekLISTA, kosarLISTA);
   });
 }
 
-function rendezEsemeny(){
-  const nevELEM=$("select").eq(1)
-  nevELEM.on("click", function(){
-      const rLISTA = rendez(termekLISTA, irany)
-      console.log(rLISTA)
-      init(rLISTA)
-      irany*=(-1)
-})
+function rendezEsemeny() {
+  const rendezELEM = $("select");
+  let rLISTA = [];
+  rendezELEM.on("change", function () {
+    console.log(rendezELEM.val());
+    if (rendezELEM.val() == 0) {
+      rLISTA = rendez(termekLISTA, -1);
+    } else if (rendezELEM.val() == 1) {
+      rLISTA = rendez(termekLISTA, 1);
+    }
+    console.log(rLISTA)
+    init(rLISTA)  
+  });
 }
 
 function szuresEsemeny() {
   const keresELEM = $(".kereso");
   keresELEM.on("keyup", function () {
     let keresoSzoveg = keresELEM.val();
+    console.log(keresELEM);
+    console.log(keresoSzoveg);
     const szurtLISTA = szures(termekLISTA, keresoSzoveg);
+    console.log(szurtLISTA);
     init(szurtLISTA);
   });
 }
 
-init(termekLISTA);
+

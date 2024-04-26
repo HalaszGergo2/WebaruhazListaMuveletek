@@ -41,8 +41,8 @@ Megjeleníti egy megfogott div elemben a html összeállít függvényeknek a vi
 
 kosarbaRak(kosarLISTA, termekLISTA, id)
 visszatérési értéke a kosár lista lesz.
-Ez a termékek listából a kiválasztott terméket hozzáadja a kosár listához .
-Akkor fut le ha a "Megvásárol" gombra kattintunk.
+Ez a termékek listából a kiválasztott id-jű terméket hozzáadja a kosár listához .
+Akkor fut le ha a "Megvásárol" gombra egy eseménykezelőt rakunk, rákattintunk a gombra.
 
 kosarbolTorol(lista, id)
 visszatérési értéke a kosár lista lesz.

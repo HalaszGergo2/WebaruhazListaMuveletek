@@ -1,6 +1,6 @@
 export function htmlCardOsszeallit(lista) {
   let txt = "<div class='row'>";
-  for (let i = 0; i < lista.length; i++) {
+  for (let i = 0; i < lista.length; i++){
     txt += `
         <div class="col-lg-3 mb-3">
             <div class="card">
