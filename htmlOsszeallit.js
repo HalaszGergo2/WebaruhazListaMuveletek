@@ -37,14 +37,14 @@ export function htmlKosarOsszeallit(lista) {
   txt +=
     "<thead><tr><th>Márka:</th><th>Nem:</th><th>Ár(Ft):</th><th></th></tr></thead>";
   txt += "<tbody>";
-  let osszeg = 0
+  let osszeg = 0;
   lista.forEach((elem, index) => {
     txt += `<tr>`;
     for (const kulcs in elem) {
-      if (kulcs !== 'kep') {
+      if (kulcs !== "kep") {
         txt += `<td>${elem[kulcs]}</td>`;
       }
-      if (kulcs === 'ar') {
+      if (kulcs === "ar") {
         osszeg += parseInt(elem[kulcs]);
       }
     }
@@ -53,8 +53,8 @@ export function htmlKosarOsszeallit(lista) {
     txt += `</tr>`;
   });
   txt += "</tbody></table></div>";
-  txt += "<div class='osszeggomb'>"
-  txt +=`<h2>Végösszeg: ${osszeg} Ft</h2>`;
+  txt += "<div class='osszeggomb'>";
+  txt += `<h2>Végösszeg: ${osszeg} Ft</h2>`;
   txt += "<button class='megvasarol'>Megvásárol</button>";
   txt += "</div>";
   return txt;

@@ -22,4 +22,3 @@ export function rendez(lista, irany) {
   });
   return lista;
 }
-

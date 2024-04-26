@@ -38,7 +38,6 @@ function torolEsemeny() {
     init(termekLISTA, kosarLISTA);
     alertEsemeny("Nincs semmi a kosaradban!");
   });
- 
 }
 
 function rendezEsemeny() {
@@ -51,10 +50,9 @@ function rendezEsemeny() {
     } else if (rendezELEM.val() == 1) {
       rLISTA = rendez(termekLISTA, -1);
     }
-    console.log(rLISTA)
-    init(rLISTA) 
+    console.log(rLISTA);
+    init(rLISTA);
   });
-
 }
 
 function szuresEsemeny() {
@@ -69,10 +67,9 @@ function szuresEsemeny() {
   });
 }
 
- function alertEsemeny(uzenet){
-  const vasarolELEM = $(".megvasarol")
-  vasarolELEM.on("click", function(){
-    window.alert(uzenet)
-  })
- }
-
+function alertEsemeny(uzenet) {
+  const vasarolELEM = $(".megvasarol");
+  vasarolELEM.on("click", function () {
+    window.alert(uzenet);
+  });
+}

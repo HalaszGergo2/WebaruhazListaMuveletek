@@ -65,10 +65,10 @@ footer {
   display: flex;
   list-style-type: none;
 }
-.nav-icons ul li{
-    padding-right: 10px;
-    margin-top: 15px;
-    margin-right: 20px;
+.nav-icons ul li {
+  padding-right: 10px;
+  margin-top: 15px;
+  margin-right: 20px;
 }
 .nav-icons a {
   color: #696a6b;
@@ -83,9 +83,9 @@ footer {
   color: #c23484;
   transition: 0.7s;
 }
-.osszeggomb{
-    margin-top: 20px;
-    margin:auto;
-    text-align: center;
-    padding: 15px;
+.osszeggomb {
+  margin-top: 20px;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
 }
