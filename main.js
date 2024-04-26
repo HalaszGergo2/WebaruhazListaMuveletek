@@ -12,6 +12,7 @@ const kosarLISTA = [];
 init(termekLISTA, kosarLISTA);
 szuresEsemeny();
 rendezEsemeny();
+alertEsemeny("Nincs semmi a kosaradban!");
 export function init(termekLISTA, kosarLISTA) {
   megjelenit(htmlCardOsszeallit(termekLISTA), kartyaELEM);
   megjelenit(htmlKosarOsszeallit(kosarLISTA), kosarELEM);
@@ -25,6 +26,7 @@ function kosarbaRakEsemeny() {
     kosarbaRak(termekLISTA, kosarLISTA, id);
     console.log(kosarLISTA);
     init(termekLISTA, kosarLISTA);
+    alertEsemeny("Vásárlásod sikeres volt!");
   });
 }
 
@@ -34,7 +36,9 @@ function torolEsemeny() {
     let id = event.target.id;
     torol(kosarLISTA, id);
     init(termekLISTA, kosarLISTA);
+    alertEsemeny("Nincs semmi a kosaradban!");
   });
+ 
 }
 
 function rendezEsemeny() {
@@ -43,13 +47,14 @@ function rendezEsemeny() {
   rendezELEM.on("change", function () {
     console.log(rendezELEM.val());
     if (rendezELEM.val() == 0) {
-      rLISTA = rendez(termekLISTA, -1);
-    } else if (rendezELEM.val() == 1) {
       rLISTA = rendez(termekLISTA, 1);
+    } else if (rendezELEM.val() == 1) {
+      rLISTA = rendez(termekLISTA, -1);
     }
     console.log(rLISTA)
-    init(rLISTA)  
+    init(rLISTA) 
   });
+
 }
 
 function szuresEsemeny() {
@@ -64,4 +69,10 @@ function szuresEsemeny() {
   });
 }
 
+ function alertEsemeny(uzenet){
+  const vasarolELEM = $(".megvasarol")
+  vasarolELEM.on("click", function(){
+    window.alert(uzenet)
+  })
+ }
 
