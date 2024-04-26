@@ -3,7 +3,9 @@
 * {
   font-family: "Fira Sans", sans-serif;
 }
-
+.alahuzas{
+    text-decoration: none;
+}
 .logo {
   padding: 15px;
   border-radius: 150px;
