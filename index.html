@@ -1,99 +1,114 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Webaruhaz">
-    <meta name="keywords" content="Webaruhaz">
-    <meta name="author" content="Halász Gergő">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Webaruhaz" />
+    <meta name="keywords" content="Webaruhaz" />
+    <meta name="author" content="Halász Gergő" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script type="module" src="main.js"></script>
 
     <title>Webáruház</title>
-</head>
-<body>
-     <main class="container-fluid">
-        
-            <header class="col-md-12">
-                <img src="kepek/logo.jpg" class="logo">
-                <h1 class="col-lg-6">TeeTopia</h1>
-            </header>
-                
-            <nav class="navbar navbar-expand-sm  navbar-light col-md-12">
-                <div class="container-fluid">
-                    <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="menupont nav-link active" href="index.html">Főoldal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="szemelyes.html">Személyes adatok</a>
-                    </li>
-                    
-                    </ul>
-                </div>
-                <div class="nav-icons">
-                  <ul>
-                    <li><a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
-                </ul>
-                </div>
-            </nav>
-            <div class="be">
-              <div class="row">
-                <label for="szuro" >Kereső:</label>
-                <input type="text" name="szuro" id="szuro" class="kereso col-lg-6">
-                <select class="form-control col-md-5 " id="rendez" class="col-lg-6">
-                    <option>Válassz rendezést</option>
-                    <option value="0">ABC sorrend</option>
-                    <option  value="1">ABC visszafele</option>
-                </select>
+  </head>
+  <body>
+    <main class="container-fluid">
+      <header class="col-md-12">
+        <img src="kepek/logo.jpg" class="logo" alt="logo" />
+        <h1 class="col-lg-6">TeeTopia</h1>
+      </header>
+
+      <nav class="navbar navbar-expand-sm navbar-light col-md-12">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="menupont nav-link active" href="index.html">Főoldal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="adatlap.html">Profil</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-icons">
+          <ul>
+            <li>
+              <a href="#" target="_blank"
+                ><i class="fa fa-facebook fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><i class="fa fa-instagram fa-2x"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="be">
+        <div class="row">
+          <label for="szuro">Kereső:</label>
+          <input type="text" name="szuro" id="szuro" class="kereso col-lg-6" />
+          <select class="form-control col-md-5 lg-6" id="rendez">
+            <option>Válassz rendezést</option>
+            <option value="0">ABC sorrend</option>
+            <option value="1">ABC visszafele</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <article class="col-md-9">
+          <div class="kartyak"></div>
+        </article>
+        <aside class="col-md-3">
+          <div class="kosar"></div>
+        </aside>
+      </div>
+      <footer class="text-center text-white">
+        <div class="container">
+          <section class="mt-5">
+            <div class="row text-center d-flex justify-content-center pt-5">
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a class="alahuzas text-white">Halász Gergő</a>
+                </h6>
+              </div>
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#" class="alahuzas text-white">Rólunk</a>
+                </h6>
+              </div>
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#" class="alahuzas text-white">Termékek</a>
+                </h6>
+              </div>
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#" class="alahuzas text-white">Segítség</a>
+                </h6>
+              </div>
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#" class="alahuzas text-white">Kapcsolat</a>
+                </h6>
               </div>
             </div>
-            <div class="row">
-                <article class="col-md-9">
-                    <div class="kartyak">
-                                
-                    </div>
-                </article>
-                <aside class="col-md-3">
-                    <div class="kosar">
-
-                    </div>
-                </aside>
-            </div>
-            <footer class="text-center text-white">
-                <div class="container">
-                  <section class="mt-5">
-                    <div class="row text-center d-flex justify-content-center pt-5">
-                        <div class="col-md-2">
-                            <h6 class="text-uppercase font-weight-bold">
-                              <a class=" alahuzas text-white">Halász Gergő</a>
-                            </h6>
-                          </div>
-                      <div class="col-md-2">
-                        <h6 class="text-uppercase font-weight-bold">
-                          <a href="#" class="alahuzas text-white">Rólunk</a>
-                        </h6>
-                      </div>
-                      <div class="col-md-2">
-                        <h6 class="text-uppercase font-weight-bold">
-                          <a href="#" class="alahuzas text-white">Termékek</a>
-                        </h6>
-                      </div>
-                      <div class="col-md-2">
-                        <h6 class="text-uppercase font-weight-bold">
-                          <a href="#" class="alahuzas text-white">Segítség</a>
-                        </h6>
-                      </div>
-                      <div class="col-md-2">
-                        <h6 class="text-uppercase font-weight-bold">
-                          <a href="#" class="alahuzas text-white">Kapcsolat</a>
-                        </h6>
-                      </div>
-                    </div>
-                </main>
-</body>
+          </section>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>

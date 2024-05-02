@@ -3,9 +3,37 @@
 * {
   font-family: "Fira Sans", sans-serif;
 }
-.alahuzas{
-    text-decoration: none;
+.alahuzas {
+  text-decoration: none;
 }
+.elso {
+  background-color: #e7d8c2;
+  border: solid 3px #bfaa8c;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.masodik {
+  background-color: #e7d8c2;
+  border: solid 3px #bfaa8c;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  background-color: #fcf3e6;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  background-color: #fffbf5;
+}
+input[id="szuro"] {
+  background-color: white;
+}
+
 .logo {
   padding: 15px;
   border-radius: 150px;
