@@ -38,6 +38,7 @@ export function htmlKosarOsszeallit(lista) {
     "<thead><tr><th>Márka:</th><th>Nem:</th><th>Ár(Ft):</th><th></th></tr></thead>";
   txt += "<tbody>";
   let osszeg = 0;
+  let db = 0;
   lista.forEach((elem, index) => {
     txt += `<tr>`;
     for (const kulcs in elem) {
@@ -46,6 +47,10 @@ export function htmlKosarOsszeallit(lista) {
       }
       if (kulcs === "ar") {
         osszeg += parseInt(elem[kulcs]);
+      }
+      if(kulcs in lista){
+        db += 1;
+        txt += db;
       }
     }
     txt += `<td class='torol' id=${"k" + index}>🗑️</td>`;
