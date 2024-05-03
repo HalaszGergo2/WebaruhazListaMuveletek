@@ -119,3 +119,14 @@ footer {
   text-align: center;
   padding: 15px;
 }
+
+.card button {
+  background-color: #bfaa8c;
+  border: 1px solid #bfaa8c;
+  color: black;
+}
+.card button:hover {
+  background-color: #e7d8c2;
+  color: black;
+  border: 1px solid #bfaa8c;
+}

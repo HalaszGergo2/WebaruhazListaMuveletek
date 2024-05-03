@@ -12,15 +12,15 @@ export function htmlCardOsszeallit(lista) {
                     
                 </div>
                 <div class="card-footer">
-                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">
+                <input type="radio" class="form-check-input" id="radio1" name="${lista[i].marka}" value="option1">
                 <label class="form-check-label" for="radio1">S</label>
-                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                <input type="radio" class="form-check-input" id="radio2" name="${lista[i].marka}" value="option2">
                 <label class="form-check-label" for="radio2">M</label>
-                <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">
+                <input type="radio" class="form-check-input" id="radio3" name="${lista[i].marka}" value="option3">
                 <label class="form-check-label" for="radio3">L</label>
-                <input type="radio" class="form-check-input" id="radio4" name="optradio" value="option4">
+                <input type="radio" class="form-check-input" id="radio4" name="${lista[i].marka}" value="option4">
                 <label class="form-check-label" for="radio4">XL</label>
-                    <p>Ár: ${lista[i].ar} Ft <button id="${i}" class="kosargomb btn btn-primary" style="float: right;">Kosárba</button></p>
+                    <p>Ár: ${lista[i].ar} Ft <button id="t${i}" class="kosargomb btn btn-primary" style="float: right;">Kosárba</button></p>
                     
                 </div>
             </div>
@@ -48,7 +48,7 @@ export function htmlKosarOsszeallit(lista) {
         osszeg += parseInt(elem[kulcs]);
       }
     }
-    txt += `<td class='torol' id=${index}>🗑️</td>`;
+    txt += `<td class='torol' id=${"k" + index}>🗑️</td>`;
 
     txt += `</tr>`;
   });

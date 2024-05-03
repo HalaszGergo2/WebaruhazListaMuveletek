@@ -13,19 +13,19 @@ init(termekLISTA, kosarLISTA);
 szuresEsemeny();
 rendezEsemeny();
 alertEsemeny("Nincs semmi a kosaradban!");
-export function init(termekLISTA, kosarLISTA) {
-  megjelenit(htmlCardOsszeallit(termekLISTA), kartyaELEM);
-  megjelenit(htmlKosarOsszeallit(kosarLISTA), kosarELEM);
-  kosarbaRakEsemeny();
+export function init(tLISTA, kLISTA) {
+  megjelenit(htmlCardOsszeallit(tLISTA), kartyaELEM);
+  megjelenit(htmlKosarOsszeallit(kLISTA), kosarELEM);
+  kosarbaRakEsemeny(tLISTA);
   torolEsemeny();
 }
-function kosarbaRakEsemeny() {
+function kosarbaRakEsemeny(lista) {
   const kosarGOMB = $(".kosargomb");
   kosarGOMB.on("click", function (event) {
-    let id = event.target.id;
-    kosarbaRak(termekLISTA, kosarLISTA, id);
-    console.log(kosarLISTA);
-    init(termekLISTA, kosarLISTA);
+    let id = event.target.id.replace("t", "");
+    console.log(id);
+    kosarbaRak(lista, kosarLISTA, id);
+    init(lista, kosarLISTA);
     alertEsemeny("Vásárlásod sikeres volt!");
   });
 }
@@ -33,7 +33,7 @@ function kosarbaRakEsemeny() {
 function torolEsemeny() {
   const torolGOMB = $(".torol");
   torolGOMB.on("click", function (event) {
-    let id = event.target.id;
+    let id = event.target.id.replace("k", "");
     torol(kosarLISTA, id);
     init(termekLISTA, kosarLISTA);
     alertEsemeny("Nincs semmi a kosaradban!");
@@ -44,14 +44,12 @@ function rendezEsemeny() {
   const rendezELEM = $("select");
   let rLISTA = [];
   rendezELEM.on("change", function () {
-    console.log(rendezELEM.val());
     if (rendezELEM.val() == 0) {
       rLISTA = rendez(termekLISTA, 1);
     } else if (rendezELEM.val() == 1) {
       rLISTA = rendez(termekLISTA, -1);
     }
-    console.log(rLISTA);
-    init(rLISTA);
+    init(rLISTA, kosarLISTA);
   });
 }
 
@@ -59,11 +57,10 @@ function szuresEsemeny() {
   const keresELEM = $(".kereso");
   keresELEM.on("keyup", function () {
     let keresoSzoveg = keresELEM.val();
-    console.log(keresELEM);
-    console.log(keresoSzoveg);
     const szurtLISTA = szures(termekLISTA, keresoSzoveg);
     console.log(szurtLISTA);
-    init(szurtLISTA);
+    console.log(termekLISTA);
+    init(szurtLISTA, kosarLISTA);
   });
 }
 
