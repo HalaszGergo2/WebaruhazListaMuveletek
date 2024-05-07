@@ -52,7 +52,7 @@
         </div>
       </nav>
       <div class="container mt-3">
-        <form action="/action_page.php">
+        <form class="was-validated">
           <fieldset class="elso">
             <legend>Személyes adatok:</legend>
             <div class="mb-3 mt-3">
@@ -63,7 +63,11 @@
                 id="nev"
                 placeholder="Valaki Vagyok"
                 name="nev"
+                pattern="^[A-Z][a-zA-Z ]{3,}$"
+                required
               />
+              <div class="valid-feedback">&#10003;</div>
+              <div class="invalid-feedback">Kötelező mező!</div>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email:</label>
@@ -73,7 +77,10 @@
                 id="email"
                 placeholder="vki@vmi.com"
                 name="email"
+                required
               />
+              <div class="valid-feedback">&#10003;</div>
+              <div class="invalid-feedback">Kötelező mező!</div>
             </div>
             <div class="mb-3">
               <label for="pwd" class="form-label">Jelszó:</label>
@@ -83,7 +90,11 @@
                 id="pwd"
                 placeholder="********"
                 name="pswd"
+                pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$"
+                required
               />
+              <div class="valid-feedback">&#10003;</div>
+              <div class="invalid-feedback">Kötelező mező!</div>
             </div>
             <div class="form-check mb-3">
               <label class="form-check-label">
@@ -106,7 +117,10 @@
                 id="varos"
                 placeholder="Budapest"
                 name="varos"
+                required
               />
+              <div class="valid-feedback">&#10003;</div>
+              <div class="invalid-feedback">Kötelező mező!</div>
             </div>
             <div class="mb-3">
               <label for="utca" class="form-label">Utca:</label>
@@ -116,7 +130,10 @@
                 id="utca"
                 placeholder="Lejtő utca"
                 name="utca"
+                required
               />
+              <div class="valid-feedback">&#10003;</div>
+              <div class="invalid-feedback">Kötelező mező!</div>
             </div>
             <div class="mb-3">
               <label for="haz" class="form-label">Házszám:</label>
@@ -126,7 +143,10 @@
                 id="haz"
                 placeholder="75/A"
                 name="haz"
+                required
               />
+              <div class="valid-feedback">&#10003;</div>
+              <div class="invalid-feedback">Kötelező mező!</div>
             </div>
           </fieldset>
           <button type="submit" class="btn btn-primary">Mentés</button>

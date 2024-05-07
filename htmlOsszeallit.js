@@ -48,10 +48,7 @@ export function htmlKosarOsszeallit(lista) {
       if (kulcs === "ar") {
         osszeg += parseInt(elem[kulcs]);
       }
-      if(kulcs in lista){
-        db += 1;
-        txt += db;
-      }
+     
     }
     txt += `<td class='torol' id=${"k" + index}>🗑️</td>`;
 
