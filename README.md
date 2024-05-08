@@ -63,3 +63,6 @@ szures()
 visszatérési értéke a termék lista lesz
 filter segítségével megszűri a termékeket egy keresőszó segítségével.
 visszatérési értéke a lista lesz
+
+alertEsemeny(uzenet)
+Ha a megvásárol gombra kattintunk, megvizsgálja, hogy a kosárban van-e termék, az alapján dob egy alertet.
