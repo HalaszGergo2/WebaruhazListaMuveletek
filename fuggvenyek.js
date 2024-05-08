@@ -11,18 +11,12 @@ let index=0
   index++
  }
  if (index < lista2.length){
-  //akkor van ilyen elem a kosárban
- }//különben nincs
+  lista1[id].db++
+ }else{
       aktTermek.db=1
       lista2.push(aktTermek)
-      
-    }
-   else
-      lista1[id].db++
-    }
-  }
-  
-}
+    }}
+
 export function torol(lista, id) {
   lista.splice(id, 1);
 }

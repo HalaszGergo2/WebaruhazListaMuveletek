@@ -35,7 +35,7 @@ export function htmlKosarOsszeallit(lista) {
   txt += "<table class='table table-striped col-lg-4'>";
   txt += "<h1>Kosár:</h1>";
   txt +=
-    "<thead><tr><th>Márka:</th><th>Nem:</th><th>Ár(Ft):</th><th></th></tr></thead>";
+    "<thead><tr><th>Márka:</th><th>Nem:</th><th>Ár(Ft):</th><th>Db:</th></tr></thead>";
   txt += "<tbody>";
   let osszeg = 0;
   let db = 0;
