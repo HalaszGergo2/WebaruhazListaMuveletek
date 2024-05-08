@@ -22,3 +22,14 @@ export function rendez(lista, irany) {
   });
   return lista;
 }
+
+export function rendezAr(lista, irany){
+  lista.sort(function(a1, a2){
+    let eredmeny = 1;
+    if(a1.ar < a2.ar){
+      eredmeny = -1;
+    }
+    return eredmeny * irany;
+  })
+  return lista;
+}

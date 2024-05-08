@@ -4,7 +4,7 @@ import {
   htmlKosarOsszeallit,
   megjelenit,
 } from "./htmlOsszeallit.js";
-import { kosarbaRak, torol, szures, rendez } from "./fuggvenyek.js";
+import { kosarbaRak, torol, szures, rendez, rendezAr } from "./fuggvenyek.js";
 
 const kartyaELEM = $(".kartyak");
 const kosarELEM = $(".kosar");
@@ -48,6 +48,11 @@ function rendezEsemeny() {
       rLISTA = rendez(termekLISTA, 1);
     } else if (rendezELEM.val() == 1) {
       rLISTA = rendez(termekLISTA, -1);
+    }
+    if(rendezELEM.val() == 2){
+      rLISTA = rendezAr(termekLISTA, 1);
+    }else if(rendezELEM.val() == 3){
+      rLISTA = rendezAr(termekLISTA, -1)
     }
     init(rLISTA, kosarLISTA);
   });
