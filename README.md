@@ -39,22 +39,22 @@ kosarLISTA = ["elején üres"]
 megjelenit(txt, divELEM)
 Megjeleníti egy megfogott div elemben a html összeállít függvényeknek a visszatérési értékét.
 
-kosarbaRak(kosarLISTA, termekLISTA, id)
+kosarbaRak(lista1, lista2, id)
 visszatérési értéke a kosár lista lesz.
 Ez a termékek listából a kiválasztott id-jű terméket hozzáadja a kosár listához .
 Akkor fut le ha a "Megvásárol" gombra egy eseménykezelőt rakunk, rákattintunk a gombra.
 
-kosarbolTorol(lista, id)
+torol(lista, id)
 visszatérési értéke a kosár lista lesz.
 Ez a kosár listából kitörli a kiválasztott terméket splice segítségével.
 Akkor fut le ha a kuka ikonra nyomunk.
 
-kosaratModosit(lista, id)
+modosit(lista, id)
 visszatérési értéke a kosár lista lesz.
 Ez a kosár lista egy elemének fogja módosítani a mennyiségét.
-Akkor fut le kosár db számot változtatjuk.
+Akkor fut le ha a kosár db számot változtatjuk.
 
-arRendezes()
+rendez(lista, irany)
 visszatérési értéke a termék lista lesz
 sort segítségével megrendezi a termékeket feltétel szerint.
 Akkor fut le ha a le/fel nyilra kattintunk.

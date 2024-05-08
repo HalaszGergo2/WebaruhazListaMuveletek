@@ -130,7 +130,10 @@ footer {
   color: black;
   border: 1px solid #bfaa8c;
 }
-#radio1, #radio2, #radio3, #radio4{
+#radio1,
+#radio2,
+#radio3,
+#radio4 {
   background-color: #c5b9a8;
   border: 0.5px solid black;
 }
