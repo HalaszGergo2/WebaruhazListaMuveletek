@@ -1,5 +1,27 @@
 export function kosarbaRak(lista1, lista2, id) {
-  lista2.push(lista1[id]);
+  //végigmegyek a kosárlistán
+  //ha az aktuális elem neve még nem  szerepel a kosárlistában
+  //akkor az aktuális elemhez hozzáteszem  a db kulcsot  db=1
+  //ha már a sazerepelt a kosárlistában, db++
+  let aktTermek=lista1[id]
+  /* keresés tétele  */
+let index=0
+  while (index < lista2.length &&  aktTermek.marka!== lista2[index].marka )
+ {
+  index++
+ }
+ if (index < lista2.length){
+  //akkor van ilyen elem a kosárban
+ }//különben nincs
+      aktTermek.db=1
+      lista2.push(aktTermek)
+      
+    }
+   else
+      lista1[id].db++
+    }
+  }
+  
 }
 export function torol(lista, id) {
   lista.splice(id, 1);

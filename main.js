@@ -4,7 +4,7 @@ import {
   htmlKosarOsszeallit,
   megjelenit,
 } from "./htmlOsszeallit.js";
-import { kosarbaRak, torol, szures, rendez, rendezAr } from "./fuggvenyek.js";
+import { kosarbaRak, torol, szures, rendez, rendezAr} from "./fuggvenyek.js";
 
 const kartyaELEM = $(".kartyak");
 const kosarELEM = $(".kosar");
@@ -13,6 +13,7 @@ init(termekLISTA, kosarLISTA);
 szuresEsemeny();
 rendezEsemeny();
 alertEsemeny("Nincs semmi a kosaradban!");
+
 export function init(tLISTA, kLISTA) {
   megjelenit(htmlCardOsszeallit(tLISTA), kartyaELEM);
   megjelenit(htmlKosarOsszeallit(kLISTA), kosarELEM);
