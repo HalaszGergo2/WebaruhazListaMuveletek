@@ -56,8 +56,13 @@ Akkor fut le ha a kosár db számot változtatjuk.
 
 rendez(lista, irany)
 visszatérési értéke a termék lista lesz
-sort segítségével megrendezi a termékeket feltétel szerint.
-Akkor fut le ha a le/fel nyilra kattintunk.
+sort segítségével megrendezi a termékeket ABC sorrendbe vagy visszafelé.
+Akkor fut le ha a select elemből az "ABC sorrend"-et választjuk, vagy a "ABC visszafelé"-t.
+
+rendezAr(lista, irany)
+visszatérési értéke a termék lista lesz
+sort segítségével megrendezi a termékeket ár szerint.
+Akkor fut le ha a select elemből az "Ár szerint növekvő"-t kiválasztjuk, vagy a "Ár szerint csökkenő"-t.
 
 szures()
 visszatérési értéke a termék lista lesz
