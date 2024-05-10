@@ -56,12 +56,12 @@ header {
   background-color: #bfaa8c;
   text-align: center;
   padding: 5px;
-  border-radius: 25px;
+  border-radius: 0 0 25px 25px;
 }
 footer {
   background-color: #bfaa8c;
   padding-bottom: 25px;
-  border-radius: 25px;
+  border-radius: 25px 25px 0 0;
 }
 .nagyit {
   transition: 0.3s ease;
